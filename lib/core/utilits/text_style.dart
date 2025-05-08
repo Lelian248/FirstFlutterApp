@@ -1,8 +1,24 @@
 import 'package:first_app/core/utilits/colors.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-TextStyle getTitelTextstyle(
-    {double? fontsize, Color? fontColor, FontWeight? fontwieght}) {
+TextStyle getButtonTextstyle({
+  double? fontsize,
+  Color? fontColor,
+  FontWeight? fontwieght,
+}) {
+  return TextStyle(
+    fontSize: fontsize ?? 20,
+    fontWeight: fontwieght ?? FontWeight.bold,
+    color: fontColor ?? AppColor.whiteColor,
+  );
+}
+
+TextStyle getTitelTextstyle({
+  double? fontsize,
+  Color? fontColor,
+  FontWeight? fontwieght,
+}) {
   return TextStyle(
     fontSize: fontsize ?? 30,
     fontWeight: fontwieght ?? FontWeight.bold,
@@ -10,8 +26,11 @@ TextStyle getTitelTextstyle(
   );
 }
 
-TextStyle getSmallTextstyle(
-    {double? fontsize, Color? fontColor, FontWeight? fontwieght}) {
+TextStyle getSmallTextstyle({
+  double? fontsize,
+  Color? fontColor,
+  FontWeight? fontwieght,
+}) {
   return TextStyle(
     fontSize: fontsize ?? 18,
     fontWeight: fontwieght ?? FontWeight.normal,
@@ -19,8 +38,11 @@ TextStyle getSmallTextstyle(
   );
 }
 
-TextStyle getBodyTextstyle(
-    {double? fontsize, Color? fontColor, FontWeight? fontwieght}) {
+TextStyle getBodyTextstyle({
+  double? fontsize,
+  Color? fontColor,
+  FontWeight? fontwieght,
+}) {
   return TextStyle(
     fontSize: fontsize ?? 24,
     fontWeight: fontwieght ?? FontWeight.normal,
