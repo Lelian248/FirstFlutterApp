@@ -9,7 +9,7 @@ TextStyle getButtonTextstyle({
 }) {
   return TextStyle(
     fontSize: fontsize ?? 20,
-    fontWeight: fontwieght ?? FontWeight.bold,
+    fontWeight: fontwieght ?? FontWeight.normal,
     color: fontColor ?? AppColor.whiteColor,
   );
 }
