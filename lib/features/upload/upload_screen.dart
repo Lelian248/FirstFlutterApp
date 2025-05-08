@@ -38,9 +38,11 @@ class _UploadScreenState extends State<UploadScreen> {
                 await picker.pickImage(source: ImageSource.camera).then((
                   value,
                 ) {
-                  setState(() {
-                    path = value?.path;
-                  });
+                  if (value != null) {
+                    setState(() {
+                      path = value.path;
+                    });
+                  }
                 });
               },
             ),
